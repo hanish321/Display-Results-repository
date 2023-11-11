@@ -162,20 +162,24 @@ setTimeout((ing1, ing2) => console.log(`${ing1} ,${ing2}  `), 3000, "olives", "s
 
 
 //// setTimeInterval
-let ab78 = 1;
+let ab78 = 0;
 
-const reuse875 = (arr => console.log(arr));
-const int43 = setInterval((i1, i2) => {
+const valueToSri = [" ", "Love", "Guide", "Protect", "Provide", "Runner"];
+
+// const reuse875 = (arr => console.log(arr));
+const int43 = setInterval((i1) => {
   // console.log(i1);
   // console.log(i2);
   // reuse875(ab78++)
-  console.log(ab78++);
+  // console.log(ab78++);
+  ab78++
+  document.write(`<h1> Sri ${ab78} ${i1[ab78]}<br> </h1>`);
 
   if (ab78 == 5) {
     clearTimeout(int43)
   }
 
-}, 1000);
+}, 1000, [...valueToSri]);
 
 
 
